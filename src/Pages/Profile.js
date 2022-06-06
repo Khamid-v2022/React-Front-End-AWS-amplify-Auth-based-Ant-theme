@@ -8,12 +8,14 @@ import CustomChart from "../Components/CustomChart";
 
 function Cart(props) {
     return (
-        <Card title={props.title} align="center">
-            <div>
-                <span className="text-muted">{props.description}</span>
-                <h1>{props.price}</h1>
-            </div>
-        </Card>
+      <Card title={props.title} align="center">
+        <div>
+          <span className="text-muted" style={{ fontSize: ".8rem" }}>
+            {props.description}
+          </span>
+          <h1>{props.price}</h1>
+        </div>
+      </Card>
     );
 }
 

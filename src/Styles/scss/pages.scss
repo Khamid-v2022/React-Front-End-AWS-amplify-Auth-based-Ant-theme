@@ -2,7 +2,7 @@
 
 .page-title {
     font-size: $title-size;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 8px;
 }
 
@@ -41,9 +41,10 @@
 
 .profile-name {
     display: block;
-    font-size: 20px;
+    font-size: 1.35em;
     font-weight: 500;
     margin: 10px 0 0px 0;
+    text-transform: uppercase;
 }
 
 .medal-box {
@@ -115,13 +116,13 @@
 
 .deaderboard-table-wrapper tbody .ant-table-cell {
     padding: 4px 8px 2px 8px!important;
-    line-height: .9rem;
+    line-height: 1em;
     color: $text-muted;
     .profile-info {
         margin-top: 4px;
         .profile-name {
             font-family: $brand-font;
-            font-size: 0.9rem;
+            font-size: 0.9em;
             padding: 0;
             margin-top: 0;
             font-weight: 500; 

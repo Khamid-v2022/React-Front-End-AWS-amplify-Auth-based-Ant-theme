@@ -1,9 +1,25 @@
 @import "../Variables/variables.scss";
+@font-face {
+    font-family: 'Erbaum-black';
+    src: local('Erbaum Black'), local('Erbaum-Black'),
+        url('./font/Erbaum-Black.woff2') format('woff2'),
+        url('./font/Erbaum-Black.woff') format('woff'),
+        url('./font/Erbaum-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
 
 // Layout
 .ant-col {
     width: 100%;
     min-height: 0;
+}
+body,
+.ant-menu,
+.ant-table.ant-table-small,
+.ant-card {
+    font-size: 13px;
+    font-family: $ui-font;
 }
 
 header {
@@ -171,6 +187,8 @@ a {
     background-color: unset;
     color: $text-muted!important;
     font-weight: 400;
+    font-size: .8em;
+        text-transform: uppercase;
 }
 td.ant-table-column-sort {
     background-color: unset;   
