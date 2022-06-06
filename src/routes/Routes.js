@@ -54,22 +54,16 @@ const MyRoutes = () => {
 
     return (
       <Layout>
-        {/* {(!isLoggedIn && !isLoggingIn) ? <></>:<Navbar />}
-         */}
-        <Navbar />
+        {!isLoggedIn && !isLoggingIn ? <></> : <Navbar />}
         <Content className="site-layout container">
           <Routes>
             <Route path="/" element={<PrivateRoute />}>
-              {/* <Route path="/" element={<Dashboard />} />
-              <Route path="/leaderboard" element={<Leaderboard />} />
-              <Route path="/profile" element={<Profile />} /> */}
-            </Route>
-
-            <Route path="/" element={<PublicRoute />}>
               <Route path="/" element={<Dashboard />} />
               <Route path="/leaderboard" element={<Leaderboard />} />
               <Route path="/profile" element={<Profile />} />
+            </Route>
 
+            <Route path="/" element={<PublicRoute />}>
               <Route path="/signin" element={<Signin />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/forgot_password" element={<ForgotPassword />} />
